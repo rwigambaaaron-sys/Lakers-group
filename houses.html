@@ -6,53 +6,60 @@
   <title>Houses</title>
 
   <style>
-    .site-header {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-wrap: wrap;
-      background-color: #929292;
-      padding: 10px;
-      gap: 150px;
-      font-family: 'Times New Roman', Times, serif, cursive;
-    }
+   .site-header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #737373;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-    .site-title {
-      margin: 0;
-      font-size: 2em;
+
+.site-header h1 {
+    color: black;
+    font-family: Poppins, 'Times New Roman', serif;
+    font-size: 50px;
+    gap: 50px;
+    line-height: 1;
+    margin: 0;
+}
+
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+@media screen and (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        height: auto; 
     }
 
     .site-nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 120px;
-      padding: 0;
-      margin: 0;
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .site-nav ul li a {
-      text-decoration: none;
-      color: black;
-      font-size: 18px;
-      font-family: 'Times New Roman', Times, serif;
+    .site-header h1 {
+        font-size: 40px;
     }
-
-    .site-nav ul li a:hover {
-      text-decoration: underline;
-    } 
-
-    h2 {
-      text-align: left;
-      font-family: Poppins;
-    }
-.site-nav{
-  display: flex;
-  justify-content: left;
-  flex-direction: column;  
-  padding: 20px 20px;
-  gap: 15px;
-  flex-wrap: wrap;
 }
 .main-container {
   display: flex;
@@ -156,11 +163,11 @@
     <h1 class="site-title"><em><strong>Houses</strong></em></h1>
     <nav class="site-nav">
       <ul>
-        <li><a href="file:///C:/Users/computer/Works/.vscode/index.html" target="_blank">Home</a></li>
-        <li><a href="https://freecatphotoapp.com">Warehouses</a></li>
+        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/index.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/.vscode/warehouses.html">Warehouses</a></li>
         <li><a href="https://freecatphotoapp.com">Buildings</a></li>
-        <li><a href="file:///C:/Users/computer/Works/.vscode/farmaland.html" target="_blank">Farm</a></li>
-        <li><a href="file:///C:/Users/computer/Works/.vscode/apartment.html">Apartments</a></li>
+        <li><a href="http://127.0.0.1:5500/.vscode/farmaland.html">Farm</a></li>
+        <li><a href="https://rwigambaaaron-sys.github.io/Lakers.group/apartments.html">Apartments</a></li>
       </ul>
     </nav>
   </header>
@@ -202,3 +209,4 @@
 
 </body>
 </html>
+
