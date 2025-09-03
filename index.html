@@ -1,197 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakers Group ltd</title>
-    <style>
-.site-header {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #737373;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-
-.site-header h1 {
-    color: rgb(255, 217, 0);
-    font-family: Poppins, 'Times New Roman', serif;
-    font-size: 60px;
-    gap: 50px;
-    line-height: 1;
-    margin: 0;
-}
-
-
-.site-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.site-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
-}
-
-@media screen and (max-width: 768px) {
-    .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 10px;
-        height: auto; 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lakers Group Ltd</title>
+  <style>
+    body {
+      background-color: rgb(194, 193, 174);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
     }
 
-    .site-nav ul {
-        flex-direction: column;
-        gap: 10px;
+    .site-header {
+      background-color: #a04e4e;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     .site-header h1 {
-        font-size: 40px;
+      color: rgb(254, 216, 0);
+      font-size: 60px;
+      margin: 0;
+      font-family: Poppins, 'Times New Roman', serif;
     }
-}
-  nav ul {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    display: flex; 
-    text-align: left;
-    gap: 200px; 
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  nav a {
-    text-decoration: none; 
-    color: black;
-  }
-       h4 {
-            color: black;
-        }
-    body  {
-           background-color: rgb(191, 191, 191);
-        }
- .main-container {
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: left;
-        gap: 10px; 
-        text-decoration: none;
+
+    .site-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 22px;
+    }
+
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+      padding: 20px;
     }
 
     .item-group {
-       display: flex; 
-        padding: 10px 20px;
-        flex-direction: column;
-        text-decoration: none;
-        border-radius: 5px;
-        align-items: left; 
-        gap: 5px; 
-    }  
-    .small-image {
-flex-direction: column;        
-height: 250px;
-    } 
-    .smaller-image {
-flex-direction: column;       
-height: 250px;
+      flex: 0 0 0 300px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
     }
-    .smallest-image {
-flex-direction: column;        
-height: 250px;
-    }
-    p{
-        font-size: 20px;
-    }
-    ul{
-        font-size: 20px;
-    }
-    h4{
-        font-size: 20px;
 
+    .item-group .label {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
+
+    .details {
+      margin-top: 10px;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slider button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
     .site-footer {
-    background-color: #737373;
-    color: #000000;
-    padding: 10px 20px; 
-    font-family: Arial, sans-serif;
-    width: 100%; 
-    box-sizing: border-box;
-}
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center; 
-    margin: 0 auto;
-    padding: 0; 
-}
-   .footer-section {
-  flex: 1;
-  margin: 10px;
-   }
+      background-color: #a5a2a2;
+      color: black;
+      padding: 20px;
+    }
 
-   .footer-section h3 {
-  border-bottom: 2px solid #6a6969; 
-  padding-bottom: 10px;
-   }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
-  .social-icons {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-  }
+    .footer-section {
+      flex: 1;
+      margin: 10px;
+    }
 
-  .social-icons a {
-   color: #000000;
-   font-size: 18px;
-   }
+    .footer-section h3 {
+      border-bottom: 2px solid #aea9a9;
+      padding-bottom: 10px;
+    }
 
-  .social-icons a:hover {
-  color: #000000; 
-  }
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
 
-   .legal-info a {
-   color: #000000;
-   text-decoration: none;
-   margin-right: 15px;
-   }
+    .social-icons a {
+      color: black;
+      font-size: 18px;
+      text-decoration: none;
+    }
 
- .legal-info a:hover {
-  text-decoration: underline;
-   }
+    .legal-info a {
+      color: black;
+      margin-right: 15px;
+      text-decoration: none;
+    }
 
- .copyright, .trademark {
-  font-size: 0.9em;
-  opacity: 0.7;
- }
-    </style>
+    .legal-info a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright,
+    .trademark {
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
+
+    @media screen and (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .item-group {
+        width: 90%;
+      }
+
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .site-nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
- <body>
-    <header class="site-header">
-<h1><strong><em>Lakers group</em></strong></h1>
- <div class="header-container"></div>
- <nav class="site-nav">
- <ul>
-  <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html">Apartments</a></li>
-   <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html">Farm</a></li>
-    <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html">Warehouses</a></li>
-     <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html">Houses</a></li>
- </ul>
- </nav>
- </header>
- <section>
+<body>
+
+  <header class="site-header">
+    <h1><strong><em>Lakers Group</em></strong></h1>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html">Apartments</a></li>
+        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html">Farm</a></li>
+        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html">Warehouses</a></li>
+        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html">Houses</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <section>
   <h2><strong>About us:</strong></h2>
   <p>Welcome to Laker Group Ltd., established in 2023, and proudly serving as your dedicated partner in the real estate market. We founded Laker Group with a clear vision: to offer a comprehensive and accessible platform for individuals and businesses seeking diverse property solutions.</p>
   <p>At Laker Group Ltd., we specialize in connecting discerning clients with an extensive portfolio of properties designed to meet a wide range of needs. Our offerings include:</p>
@@ -202,70 +206,116 @@ height: 250px;
  <li><strong>Modern apartments</strong>: Catering to urban living and rental investments. </li>
  <li><strong>Versatile warehouses</strong>: Suited for commercial, industrial, or storage requirements.</li> 
   </ul>
-  <h4>
-    Find land, homes, farmland, warehouses and apartments here;  
-</h4>
-<div class="main-container">
-  <div class="item-group">
-    <div class="label">Farmland -Rwamagana</div>
- <img src="gfs.png" alt="Farm">
-     <div class="label">Farmland -Rwamagana</div>
-    <img src="gfs.png" alt="Farm">
-     <div class="details">
-  <p><strong><em> 30 acres of farmland</em></strong>
-     <strong><em>Price: 300000 RWF</em></strong>   
-     </div>
-  <div class="item-group">
-    <div class="label">Farmland -Rwamagana</div>
-    <img src="gfs.png" alt="Farm">
-     <div class="details"><p><strong><em>
-      30 acres of farmland</em></strong>
-     <strong><em>Price: 300000 RWF</em></strong>   
-     </div>
-  </div>
-  <div class="item-group">
-  <div class="label">House A - Rwamagana</div>
-  
-  <div class="slider">
-    <img class="slide" src="house1.jpg" alt="House image 1">
-    <img class="slide" src="house2.jpg" alt="House image 2">
-    <img class="slide" src="house3.jpg" alt="House image 3">
-    
-    <button class="prev" onclick="plusSlides(-1)">❮</button>
-    <button class="next" onclick="plusSlides(1)">❯</button>
-  </div>
+    <div class="main-container">
 
-  <div class="details">
-    <p><strong>3 beds and a bathroom</strong></p>
-    <p>3000000 RWF - KG 235, Rwamagana</p>
-  </div>
-</div>
+      <div class="item-group">
+        <div class="label">Warehouse - Rwamagana</div>
+        <div class="slider">
+          <img class="slide" src="gfs.png" alt="Warehouse 1" />
+          <img class="slide" src="fo.png" alt="Warehouse 2" />
+          <button class="prev" onclick="plusSlides(-1, 0)">❮</button>
+          <button class="next" onclick="plusSlides(1, 0)">❯</button>
+        </div>
+        <div class="details">
+          <p><strong>13 acres and 25 units</strong></p>
+          <p>3000000 RWF - KG 235, Rwamagana</p>
+          <a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html" target="_blank"><em>View more</em></a>
+        </div>
+      </div>
 
+         <div class="item-group">
+        <div class="label">Farmland - Rwamagana</div>
+        <div class="slider">
+          <img class="slide" src="gfs.png" alt="Warehouse 1" />
+          <img class="slide" src="fo.png" alt="Warehouse 2" />
+          <button class="prev" onclick="plusSlides(-1, 0)">❮</button>
+          <button class="next" onclick="plusSlides(1, 0)">❯</button>
+        </div>
+        <div class="details">
+          <p><strong>30 acres</strong></p>
+          <p>3000000 RWF - KG 235, Rwamagana</p>
+          <a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html" target="_blank"><em>View more</em></a>
+        </div>
+      </div>
+
+      <div class="item-group">
+        <div class="label">Apartment - Rwamagana</div>
+        <div class="slider">
+          <img class="slide" src="gfs.png" alt="Apartment 1" />
+          <img class="slide" src="fo.png" alt="Apartment 2" />
+          <button class="prev" onclick="plusSlides(-1, 1)">❮</button>
+          <button class="next" onclick="plusSlides(1, 1)">❯</button>
+        </div>
+        <div class="details">
+          <p><strong>3 beds and a bathroom</strong></p>
+          <p>3000000 RWF - KG 235, Rwamagana</p>
+          <a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html" target="_blank"><em>View more</em></a>
+        </div>
+      </div>
+
+      <div class="item-group">
+        <div class="label">Houses - Rwamagana</div>
+        <div class="slider">
+          <img class="slide" src="gfs.png" alt="House 1" />
+          <img class="slide" src="fo.png" alt="House 2" />
+          <button class="prev" onclick="plusSlides(-1, 2)">❮</button>
+          <button class="next" onclick="plusSlides(1, 2)">❯</button>
+        </div>
+        <div class="details">
+          <p><strong>3 beds and a bathroom</strong></p>
+          <p>3000000 RWF - KG 235, Rwamagana</p>
+          <a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html" target="_blank"><em>View more</em></a>
+        </div>
+      </div>
+    </div>
   </section>
-   <footer class="site-footer">
-    <div class="footer_container">
-     <div class="footer-section app-links">
-      <h3>Contact us</h3>
-       <p>Our hotline: 0794444334</p>
-         <p>Our Whatsapp: 0788333324</p>
-        </div>
-    </div>
-    <div class="footer-section social-links">
-      <h3>Follow Us</h3>
-      <ul class="social-icons">
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact us</h3>
+        <p>Hotline: 0794444334</p>
+        <p>Whatsapp: 0788333324</p>
+      </div>
+      <div class="footer-section social-links">
+        <h3>Follow Us</h3>
+        <ul class="social-icons">
         </ul>
-     <p>On our <a href="https://freecatphotoapp.com" target="_blank"><em>instagram</em></a></p>
-  <p>On our <a href="https://freecatphotoapp.com" target="_blank"><em>X account</em></a></p>
-        </div>
-    <div class="footer-section legal-info">
-      <p>Lakers group ltd</p>
-      <p class="copyright">&copy; 2024 Lakers group. All rights reserved.</p>
-      <p class="trademark">Lakers group ltd&trade;</p>
-      <p>>Privacy Policy | Terms of Use</p>
+        <p>On our <a href="#" target="_blank"><em>Instagram</em></a></p>
+        <p>On our <a href="#" target="_blank"><em>X (Twitter)</em></a></p>
+      </div>
+      <div class="footer-section legal-info">
+        <p>&copy; 2024 Lakers Group. All rights reserved.</p>
+        <p class="trademark">Lakers Group Ltd&trade;</p>
+        <p>Privacy Policy | Terms of Use</p>
+      </div>
     </div>
-  </div>
-</footer> 
+  </footer>
+<script>
+
+  document.querySelectorAll('.slider').forEach((slider, index) => {
+    let slides = slider.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function showSlide(n) {
+      currentIndex = (n + slides.length) % slides.length;
+      slides.forEach((slide, i) => {
+        slide.style.display = i === currentIndex ? 'block' : 'none';
+      });
+    }
+
+    showSlide(0);
+
+    slider.querySelector('.prev').addEventListener('click', () => {
+      showSlide(currentIndex - 1);
+    });
+
+    slider.querySelector('.next').addEventListener('click', () => {
+      showSlide(currentIndex + 1);
+    });
+  });
+</script>
+
+
 </body>
 </html>
-
-
