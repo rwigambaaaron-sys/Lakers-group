@@ -72,8 +72,21 @@
 .item-group {
   flex: 1 1 200px;
   max-width: 300px;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
 }
-
+    
+.item-group .label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+    
+  .item-group .details {
+  margin-top: 6px;
+  font-size: 14px;
+}
+    
 .item-group img {
   width: 100%;
   height: auto;
@@ -174,13 +187,19 @@
   <section>
 <div class="main-container">
   <div class="item-group">
+    <div class="label">Famrland -Rwamagana</div>
     <a href="https://freecatphotoapp.com"><img src="gfs.png" alt="farmland1"></a>
+    <div class="details">Price: 300000 RWF</div>
 </div>
   <div class="item-group">
+    <div class="label">Famrland -Rwamagana</div>
     <a href="https://freecatphotoapp.com"><img src="gfs.png" alt="farmland2"></a>
+     <div class="details">Price: 300000 RWF</div>
   </div>
   <div class="item-group">
+    <div class="label">Famrland -Rwamagana</div>
     <a href="https://freecatphotoapp.com"><img src="gfs.png" alt="farmland3"></a>
+     <div class="details">Price: 300000 RWF</div>
  </div>
 </div> 
   </section>
@@ -209,5 +228,6 @@
 
 </body>
 </html>
+
 
 
