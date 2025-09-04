@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apartments</title>
+  <title>Houses</title>
+
   <style>
-body{
+    body{
   background-color: rgb(194, 193, 174);
     }
    .site-header {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #a04e4e;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@ body{
 
 
 .site-header h1 {
-    color: black;
+    color: rgb(254, 216, 0);
     font-family: Poppins, 'Times New Roman', serif;
     font-size: 50px;
     gap: 50px;
@@ -42,7 +42,7 @@ body{
 
 .site-nav a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 22px;
 }
 @media screen and (max-width: 768px) {
@@ -128,8 +128,6 @@ body{
     }
 
     .site-footer {
-    background-color: #aea9a9;
-    color: #000000;
     padding: 10px 15px; 
     font-family: Arial, sans-serif;
     width: 100%; 
@@ -149,7 +147,7 @@ body{
    }
 
    .footer-section h3 {
-  border-bottom: 2px solid #aea9a9; 
+  border-bottom: 2px solid black; 
   padding-bottom: 10px;
    }
 
@@ -170,7 +168,6 @@ body{
   }
 
    .legal-info a {
-   color: #000000;
    text-decoration: none;
    margin-right: 15px;
    }
@@ -202,19 +199,23 @@ body{
         flex-direction: column;
         gap: 10px;
       }
-    }
+     }
+        .site-header, .site-footer {
+    background-color: #6B5F3F; 
+    color: #FFFF;
+}
   </style>
 </head>
 <body>
 
   <header class="site-header">
-    <h1 class="site-title"><em><strong>Apartments</strong></em></h1>
+    <h1 class="site-title"><em><strong>Houses</strong></em></h1>
     <nav class="site-nav">
       <ul>
-                <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/index.html">Home</a></li>
+        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/index.html">Home</a></li>
    <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html">Farm</a></li>
     <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html">Buildings</a></li>
-     <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html">Houses</a></li>
+     <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html">Apartments</a></li>
        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html">Warehouses</a></li>
       </ul>
     </nav>
@@ -222,7 +223,7 @@ body{
   <section>
 <div class="main-container">
 <div class="item-group">
-        <div class="label">Apartments - Rwamagana</div>
+        <div class="label">Warehouse - Rwamagana</div>
         <div class="slider">
           <img class="slide" src="gfs.png" alt="House 1" />
           <img class="slide" src="fo.png" alt="House 2" />
@@ -231,12 +232,12 @@ body{
         </div>
         <div class="details">
           <p><strong>3 bedrooms and a bathroom</strong></p>
-          <p>3000000 RWF - KG 235, Rwamagana</p>
+          <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
         </div>
       </div>
 
          <div class="item-group">
-        <div class="label">Apartments - Rwamagana</div>
+        <div class="label">House - Rwamagana</div>
         <div class="slider">
           <img class="slide" src="gfs.png" alt="House 1" />
           <img class="slide" src="fo.png" alt="House 2" />
@@ -245,12 +246,12 @@ body{
         </div>
         <div class="details">
           <p><strong>3 beds and a batroom</strong></p>
-          <p>3000000 RWF - KG 235, Rwamagana</p>
+          <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
         </div>
       </div>
 
       <div class="item-group">
-        <div class="label">Apartments - Rwamagana</div>
+        <div class="label">House - Rwamagana</div>
         <div class="slider">
           <img class="slide" src="gfs.png" alt="House 1" />
           <img class="slide" src="fo.png" alt="House 2" />
@@ -259,12 +260,12 @@ body{
         </div>
         <div class="details">
           <p><strong>3 beds and a bathroom</strong></p>
-          <p>3000000 RWF - KG 235, Rwamagana</p>
+          <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
         </div>
       </div>
 
       <div class="item-group">
-        <div class="label">Apartment - Rwamagana</div>
+        <div class="label">Houses - Rwamagana</div>
         <div class="slider">
           <img class="slide" src="gfs.png" alt="House 1" />
           <img class="slide" src="fo.png" alt="House 2" />
@@ -273,9 +274,9 @@ body{
         </div>
         <div class="details">
           <p><strong>3 beds and a bathroom</strong></p>
-          <p>3000000 RWF - KG 235, Rwamagana</p>
+          <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
         </div>
-     </div>
+      </div>
 </div> 
   </section>
   <footer class="site-footer">
@@ -322,7 +323,7 @@ body{
       showSlide(currentIndex + 1);
     });
   });
-  </script>
- </body>
+</script>
+</body>
 </html>
 
