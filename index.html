@@ -45,7 +45,7 @@
     
 .hero {
   text-align: center;
-  padding: 40px 20px;
+  padding: 30px 15px;
   background: #ddd;
   border-radius: 10px;
   margin: 20px;
@@ -243,8 +243,9 @@
           <div class="counter"></div>
         </div>
         <div class="details">
-          <p><strong>13 acres and 25 units</strong></p>
-          <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
+          <p>13 acres and 25 units</p>
+          <p>3000000 RWF</p>
+          <p>KG 235, Rwamagana</p>
           <a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html" target="_blank"><em>View more</em></a>
         </div>
       </div>
@@ -259,8 +260,9 @@
           <div class="counter"></div>
         </div>
         <div class="details">
-          <p><strong>30 acres</strong></p>
-          <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
+          <p>30 acres</p>
+          <p>3000000 RWF</p>
+          <p>KG 235, Rwamagana</p>
           <a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html" target="_blank"><em>View more</em></a>
         </div>
       </div>
@@ -275,8 +277,9 @@
           <div class="counter"></div>
         </div>
         <div class="details">
-          <p><strong>3 beds and a bathroom</strong></p>
-          <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
+          <p>3 beds and a bathroom</p>
+          <p>3000000 RWF</p>
+          <p>KG 235, Rwamagana</p>
           <a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html" target="_blank"><em>View more</em></a>
         </div>
       </div>
@@ -291,8 +294,9 @@
           <div class="counter"></div>
         </div>
         <div class="details">
-          <p><strong>3 beds and a bathroom</strong></p>
-          <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
+          <p>3 beds and a bathroom</p>
+          <p>3000000 RWF</p>
+            <p>KG 235, Rwamagana</p>
           <a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html" target="_blank"><em>View more</em></a>
         </div>
       </div>
@@ -321,33 +325,37 @@
     </div>
   </footer>
 <script>
+document.querySelectorAll(".slider").forEach((slider) => {
+  const slides = slider.querySelector(".slides");
+  const images = slides.querySelectorAll("img");
+  const prevBtn = slider.querySelector(".prev");
+  const nextBtn = slider.querySelector(".next");
+  const counter = slider.querySelector(".counter");
 
-  document.querySelectorAll('.slider').forEach((slider, index) => {
-    let slides = slider.querySelectorAll('.slide');
-    let currentIndex = 0;
+  let index = 0;
+  const total = images.length;
 
-    function showSlide(n) {
-      currentIndex = (n + slides.length) % slides.length;
-      slides.forEach((slide, i) => {
-        slide.style.display = i === currentIndex ? 'block' : 'none';
-      });
-    }
+  function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+    counter.textContent = `${index + 1} / ${total}`;
+  }
 
-    showSlide(0);
-
-    slider.querySelector('.prev').addEventListener('click', () => {
-      showSlide(currentIndex - 1);
-    });
-
-    slider.querySelector('.next').addEventListener('click', () => {
-      showSlide(currentIndex + 1);
-    });
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + total) % total;
+    updateSlide();
   });
+
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % total;
+    updateSlide();
+  });
+
+  updateSlide();
+});
 </script>
-
-
 </body>
 </html>
+
 
 
 
