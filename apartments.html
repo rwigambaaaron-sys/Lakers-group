@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apartments</title>
-
+  <title>Apartments🏢</title>
   <style>
-    body{
+body{
   background-color: rgb(194, 193, 174);
     }
    .site-header {
@@ -22,7 +21,7 @@
 
 
 .site-header h1 {
-    color: rgb(254, 216, 0);
+     color: rgb(254, 216, 0);
     font-family: Poppins, 'Times New Roman', serif;
     font-size: 50px;
     gap: 50px;
@@ -81,6 +80,13 @@
       box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
     }
 
+.item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: #eee; 
+    }
+    
     .item-group .label {
       font-size: 20px;
       font-weight: bold;
@@ -168,6 +174,7 @@
   }
 
    .legal-info a {
+   color: white;
    text-decoration: none;
    margin-right: 15px;
    }
@@ -199,7 +206,7 @@
         flex-direction: column;
         gap: 10px;
       }
-     }
+    }
         .site-header, .site-footer {
     background-color: #6B5F3F; 
     color: #FFFF;
@@ -209,13 +216,13 @@
 <body>
 
   <header class="site-header">
-    <h1 class="site-title"><em><strong>Apartment</strong></em></h1>
+    <h1 class="site-title"><em><strong>Apartments</strong></em></h1>
     <nav class="site-nav">
       <ul>
-        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/index.html">Home</a></li>
+                <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/index.html">Home</a></li>
    <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html">Farm🌲</a></li>
-     <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html">Warehouses🏬</a></li>
-       <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html">Houses🏡</a></li>
+     <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html">Houses🏡</a></li>
+       <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html">Warehouses🏬</a></li>
       </ul>
     </nav>
   </header>
@@ -224,8 +231,8 @@
 <div class="item-group">
         <div class="label">Apartment🏢 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="House 1" />
-          <img class="slide" src="fo.png" alt="House 2" />
+          <img class="slide" src="gfs.png" alt="Apartment 1" loading="lazy"/>
+          <img class="slide" src="fo.png" alt="Apartment 2" loading="lazy"/>
           <button class="prev" onclick="plusSlides(-1, 0)">❮</button>
           <button class="next" onclick="plusSlides(1, 0)">❯</button>
         </div>
@@ -238,8 +245,8 @@
          <div class="item-group">
         <div class="label">Apartment🏢 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="House 1" />
-          <img class="slide" src="fo.png" alt="House 2" />
+          <img class="slide" src="gfs.png" alt="Apartment 1" loading="lazy"/>
+          <img class="slide" src="fo.png" alt="Apartment 2" loading="lazy"/>
           <button class="prev" onclick="plusSlides(-1, 0)">❮</button>
           <button class="next" onclick="plusSlides(1, 0)">❯</button>
         </div>
@@ -252,8 +259,8 @@
       <div class="item-group">
         <div class="label">Apartment🏢 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="House 1" />
-          <img class="slide" src="fo.png" alt="House 2" />
+          <img class="slide" src="gfs.png" alt="Apartment 1" loading="lazy"/>
+          <img class="slide" src="fo.png" alt="Apartment 2" loading="lazy"/>
           <button class="prev" onclick="plusSlides(-1, 1)">❮</button>
           <button class="next" onclick="plusSlides(1, 1)">❯</button>
         </div>
@@ -266,8 +273,8 @@
       <div class="item-group">
         <div class="label">Apartment🏢 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="House 1" />
-          <img class="slide" src="fo.png" alt="House 2" />
+          <img class="slide" src="gfs.png" alt="Apartment 1" loading="lazy"/>
+          <img class="slide" src="fo.png" alt="Apartment 2" loading="lazy"/>
           <button class="prev" onclick="plusSlides(-1, 2)">❮</button>
           <button class="next" onclick="plusSlides(1, 2)">❯</button>
         </div>
@@ -275,7 +282,7 @@
           <p><strong>3 beds and a bathroom</strong></p>
           <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
         </div>
-      </div>
+     </div>
 </div> 
   </section>
   <footer class="site-footer">
@@ -322,9 +329,11 @@
       showSlide(currentIndex + 1);
     });
   });
-</script>
-</body>
+  </script>
+ </body>
 </html>
+
+
 
 
 
