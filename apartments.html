@@ -86,7 +86,7 @@ body{
       object-fit: cover;
       background: #eee; 
     }
-    
+
     .item-group .label {
       font-size: 20px;
       font-weight: bold;
@@ -131,6 +131,17 @@ body{
 
     .next {
       right: 10px;
+    }
+
+    .counter {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
     }
 
     .site-footer {
@@ -231,10 +242,12 @@ body{
 <div class="item-group">
         <div class="label">Apartment🏢 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="Apartment 1" loading="lazy"/>
-          <img class="slide" src="fo.png" alt="Apartment 2" loading="lazy"/>
-          <button class="prev" onclick="plusSlides(-1, 0)">❮</button>
-          <button class="next" onclick="plusSlides(1, 0)">❯</button>
+          <img class="slide" src="gfs.webp" alt="Apartment 1" loading="lazy"/>
+          <img class="slide" src="fo.webp" alt="Apartment 2" loading="lazy"/>
+           <img class="slide" src="po.webp" alt="Apartment 3" loading="lazy"/>
+          <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+             <div class="counter"></div>
         </div>
         <div class="details">
           <p><strong>3 bedrooms and a bathroom</strong></p>
@@ -245,10 +258,12 @@ body{
          <div class="item-group">
         <div class="label">Apartment🏢 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="Apartment 1" loading="lazy"/>
-          <img class="slide" src="fo.png" alt="Apartment 2" loading="lazy"/>
-          <button class="prev" onclick="plusSlides(-1, 0)">❮</button>
-          <button class="next" onclick="plusSlides(1, 0)">❯</button>
+          <img class="slide" src="gfs.webp" alt="Apartment 1" loading="lazy"/>
+          <img class="slide" src="fo.webp" alt="Apartment 2" loading="lazy"/>
+           <img class="slide" src="po.webp" alt="Apartment 3" loading="lazy"/>
+             <button class="prev" aria-label="Previous slide">❮</button>
+             <button class="next" aria-label="Next slide">❯</button>
+              <div class="counter"></div>
         </div>
         <div class="details">
           <p><strong>3 beds and a batroom</strong></p>
@@ -259,10 +274,12 @@ body{
       <div class="item-group">
         <div class="label">Apartment🏢 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="Apartment 1" loading="lazy"/>
-          <img class="slide" src="fo.png" alt="Apartment 2" loading="lazy"/>
-          <button class="prev" onclick="plusSlides(-1, 1)">❮</button>
-          <button class="next" onclick="plusSlides(1, 1)">❯</button>
+          <img class="slide" src="gfs.webp" alt="Apartment 1" loading="lazy"/>
+          <img class="slide" src="fo.webp" alt="Apartment 2" loading="lazy"/>
+          <img class="slide" src="po.webp" alt="Apartment 3" loading="lazy"/>
+          <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+             <div class="counter"></div>
         </div>
         <div class="details">
           <p><strong>3 beds and a bathroom</strong></p>
@@ -273,10 +290,12 @@ body{
       <div class="item-group">
         <div class="label">Apartment🏢 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="Apartment 1" loading="lazy"/>
-          <img class="slide" src="fo.png" alt="Apartment 2" loading="lazy"/>
-          <button class="prev" onclick="plusSlides(-1, 2)">❮</button>
-          <button class="next" onclick="plusSlides(1, 2)">❯</button>
+          <img class="slide" src="gfs.webp" alt="Apartment 1" loading="lazy"/>
+          <img class="slide" src="fo.webp" alt="Apartment 2" loading="lazy"/>
+           <img class="slide" src="po.webp" alt="Apartment 3" loading="lazy"/>
+          <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+             <div class="counter"></div>
         </div>
         <div class="details">
           <p><strong>3 beds and a bathroom</strong></p>
@@ -307,31 +326,39 @@ body{
       </div>
     </div>
   </footer>
-  <script>
-  document.querySelectorAll('.slider').forEach((slider, index) => {
-    let slides = slider.querySelectorAll('.slide');
-    let currentIndex = 0;
+<script>
+document.querySelectorAll(".slider").forEach((slider) => {
+  const slides = slider.querySelectorAll("img");
+  const prevBtn = slider.querySelector(".prev");
+  const nextBtn = slider.querySelector(".next");
+  const counter = slider.querySelector(".counter");
 
-    function showSlide(n) {
-      currentIndex = (n + slides.length) % slides.length;
-      slides.forEach((slide, i) => {
-        slide.style.display = i === currentIndex ? 'block' : 'none';
-      });
-    }
+  let index = 0;
+  const total = slides.length;
 
-    showSlide(0);
-
-    slider.querySelector('.prev').addEventListener('click', () => {
-      showSlide(currentIndex - 1);
+  function updateSlide() {
+    slides.forEach((img, i) => {
+      img.style.display = i === index ? "block" : "none";
     });
+    counter.textContent = `${index + 1} / ${total}`;
+  }
 
-    slider.querySelector('.next').addEventListener('click', () => {
-      showSlide(currentIndex + 1);
-    });
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + total) % total;
+    updateSlide();
   });
-  </script>
+
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % total;
+    updateSlide();
+  });
+
+  updateSlide();
+});
+</script>
  </body>
 </html>
+
 
 
 
