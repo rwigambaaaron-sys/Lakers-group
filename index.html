@@ -70,6 +70,13 @@
       box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
     }
 
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: #eee; 
+    }
+
     .item-group .label {
       font-size: 20px;
       font-weight: bold;
@@ -83,7 +90,7 @@
     .slider {
       position: relative;
       width: 100%;
-      height: 170px;
+      height: 200px;
       overflow: hidden;
       border-radius: 5px;
     }
@@ -92,22 +99,9 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      flex-shrink: 0;
     }
-    
-.slides {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-}
 
-.slides img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  flex-shrink: 0;
-  border-radius: 5px;
-}
     .slider button {
       position: absolute;
       top: 50%;
@@ -130,14 +124,14 @@
     }
     
     .counter {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  background: rgba(0,0,0,0.6);
-  color: white;
-  font-size: 12px;
-  padding: 4px 10px;
-  border-radius: 20px;
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
     }
     
     .site-footer {
@@ -189,7 +183,6 @@
       opacity: 0.7;
     }
 
-
     @media screen and (max-width: 768px) {
       .main-container {
         flex-direction: column;
@@ -210,10 +203,11 @@
         gap: 10px;
       }
     }
-        .site-header, .site-footer {
-    background-color: #6B5F3F; 
-    color: #FFFF;
-}
+
+    .site-header, .site-footer {
+      background-color: #6B5F3F; 
+      color: #FFFF;
+    }
   </style>
 </head>
 <body>
@@ -229,101 +223,102 @@
     </nav>
   </header>
 
-   <section>
-  <h2><strong>About us:</strong></h2>
-  <p>Welcome to Laker Group Ltd., established in 2023, and proudly serving as your dedicated partner in the real estate market. We founded Laker Group with a clear vision: to offer a comprehensive and accessible platform for individuals and businesses seeking diverse property solutions.</p>
-  <p>At Laker Group Ltd., we specialize in connecting discerning clients with an extensive portfolio of properties designed to meet a wide range of needs. Our offerings include:</p>
-  <ul>
- <li><strong>Residential houses</strong>: Perfect for families and individuals seeking a new home. </li>
- <li><strong>Productive farmland</strong>: Ideal for agricultural ventures or rural living. </li>
- <li><strong>Undeveloped land plots</strong>: Offering opportunities for custom development or investment. </li>
- <li><strong>Modern apartments</strong>: Catering to urban living and rental investments. </li>
- <li><strong>Versatile warehouses</strong>: Suited for commercial, industrial, or storage requirements.</li> 
-  </ul>
-      <section class="hero">
+  <section>
+    <h2><strong>About us:</strong></h2>
+    <p>Welcome to Laker Group Ltd., established in 2023, and proudly serving as your dedicated partner in the real estate market. We founded Laker Group with a clear vision: to offer a comprehensive and accessible platform for individuals and businesses seeking diverse property solutions.</p>
+    <p>At Laker Group Ltd., we specialize in connecting discerning clients with an extensive portfolio of properties designed to meet a wide range of needs. Our offerings include:</p>
+    <ul>
+      <li><strong>Residential houses</strong>: Perfect for families and individuals seeking a new home. </li>
+      <li><strong>Productive farmland</strong>: Ideal for agricultural ventures or rural living. </li>
+      <li><strong>Undeveloped land plots</strong>: Offering opportunities for custom development or investment. </li>
+      <li><strong>Modern apartments</strong>: Catering to urban living and rental investments. </li>
+      <li><strong>Versatile warehouses</strong>: Suited for commercial, industrial, or storage requirements.</li> 
+    </ul>
+
+    <section class="hero">
       <h2>Find Your Dream Property in Rwanda</h2>
       <p>We specialize in residential, commercial, and farmland properties.</p>
     </section>
-     <section>
-    <div class="main-container">
-      <div class="item-group">
-        <div class="label">Warehouse🏬 - Rwamagana</div>
-        <div class="slider">
-          <div class="slides">
-          <img class="slide" src="gfs.png" alt="Warehouse 1" />
-          <img class="slide" src="fo.png" alt="Warehouse 2" />
-          </div>
-          <button class="prev" aria-label="Previous slide">❮</button>
-          <button class="next" aria-label="Next slide">❯</button>
-          <div class="counter"></div>
-        </div>
-        <div class="details">
-          <p>13 acres and 25 units</p>
-          <p>3000000 RWF</p>
-          <p>KG 235, Rwamagana</p>
-          <a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html" target="_blank"><em>View more</em></a>
-        </div>
-      </div>
 
-         <div class="item-group">
-        <div class="label">Farmland🌲 - Rwamagana</div>
-        <div class="slider">
-          <div class="slides">
-          <img class="slide" src="gfs.png" alt="Warehouse 1" />
-          <img class="slide" src="fo.png" alt="Warehouse 2" />
-            </div>
-          <button class="prev" aria-label="Previous slide">❮</button>
-          <button class="next" aria-label="Next slide">❯</button>
-          <div class="counter"></div>
-        </div>
-        <div class="details">
-          <p>30 acres</p>
-          <p>3000000 RWF</p>
-          <p>KG 235, Rwamagana</p>
-          <a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html" target="_blank"><em>View more</em></a>
-        </div>
-      </div>
+    <section>
+      <div class="main-container">
 
-      <div class="item-group">
-        <div class="label">Apartment🏢 - Rwamagana</div>
-        <div class="slider">
-          <div class="slides">
-          <img class="slide" src="gfs.png" alt="Apartment 1" />
-          <img class="slide" src="fo.png" alt="Apartment 2" />
+        <div class="item-group">
+          <div class="label">Warehouse🏬 - Rwamagana</div>
+          <div class="slider">
+            <img class="slide" src="gfs.webp" alt="Warehouse 1" loading="lazy"/>
+            <img class="slide" src="fo.webp" alt="Warehouse 2" loading="lazy"/>
+            <img class="slide" src="po.webp" alt="Warehouse 3" loading="lazy"/>
+            <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+            <div class="counter"></div>
           </div>
-          <button class="prev" aria-label="Previous slide">❮</button>
-          <button class="next" aria-label="Next slide">❯</button>
-          <div class="counter"></div>
-        </div>
-        <div class="details">
-          <p>3 beds and a bathroom</p>
-          <p>3000000 RWF</p>
-          <p>KG 235, Rwamagana</p>
-          <a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html" target="_blank"><em>View more</em></a>
-        </div>
-      </div>
-
-      <div class="item-group">
-        <div class="label">Houses🏡 - Rwamagana</div>
-        <div class="slider">
-          <div class="slides">
-          <img class="slide" src="gfs.png" alt="House 1" />
-          <img class="slide" src="fo.png" alt="House 2" />
-          </div>
-          <button class="prev" aria-label="Previous slide">❮</button>
-          <button class="next" aria-label="Next slide">❯</button>
-          <div class="counter"></div>
-        </div>
-        <div class="details">
-          <p>3 beds and a bathroom</p>
-          <p>3000000 RWF</p>
+          <div class="details">
+            <p>13 acres and 25 units</p>
+            <p>3000000 RWF</p>
             <p>KG 235, Rwamagana</p>
-          <a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html" target="_blank"><em>View more</em></a>
+            <a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html" target="_blank"><em>View more</em></a>
+          </div>
         </div>
+
+        <div class="item-group">
+          <div class="label">Farmland🌲 - Rwamagana</div>
+          <div class="slider">
+            <img class="slide" src="gfs.webp" alt="Farmland 1" loading="lazy"/>
+            <img class="slide" src="fo.webp" alt="Farmland 2" loading="lazy"/>
+            <img class="slide" src="po.webp" alt="Farmland 3" loading="lazy"/>
+            <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+            <div class="counter"></div>
+          </div>
+          <div class="details">
+            <p>30 acres</p>
+            <p>3000000 RWF</p>
+            <p>KG 235, Rwamagana</p>
+            <a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html" target="_blank"><em>View more</em></a>
+          </div>
+        </div>
+
+        <div class="item-group">
+          <div class="label">Apartment🏢 - Rwamagana</div>
+          <div class="slider">
+            <img class="slide" src="gfs.webp" alt="Apartment 1" loading="lazy"/>
+            <img class="slide" src="fo.webp" alt="Apartment 2" loading="lazy"/>
+            <img class="slide" src="po.webp" alt="Apartment 3" loading="lazy"/>
+            <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+            <div class="counter"></div>
+          </div>
+          <div class="details">
+            <p>3 beds and a bathroom</p>
+            <p>3000000 RWF</p>
+            <p>KG 235, Rwamagana</p>
+            <a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html" target="_blank"><em>View more</em></a>
+          </div>
+        </div>
+
+        <div class="item-group">
+          <div class="label">Houses🏡 - Rwamagana</div>
+          <div class="slider">
+            <img class="slide" src="gfs.webp" alt="House 1" loading="lazy"/>
+            <img class="slide" src="fo.webp" alt="House 2" loading="lazy"/>
+            <img class="slide" src="po.webp" alt="House 3" loading="lazy"/>
+            <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+            <div class="counter"></div>
+          </div>
+          <div class="details">
+            <p>3 beds and a bathroom</p>
+            <p>3000000 RWF</p>
+            <p>KG 235, Rwamagana</p>
+            <a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html" target="_blank"><em>View more</em></a>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
   </section>
-   </section>
+
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-section">
@@ -333,8 +328,7 @@
       </div>
       <div class="footer-section social-links">
         <h3>Follow Us📲</h3>
-        <ul class="social-icons">
-        </ul>
+        <ul class="social-icons"></ul>
         <p>On our <a href="#" target="_blank"><em>Instagram</em></a></p>
         <p>On our <a href="#" target="_blank"><em>X (Twitter)</em></a></p>
       </div>
@@ -345,19 +339,21 @@
       </div>
     </div>
   </footer>
+
 <script>
 document.querySelectorAll(".slider").forEach((slider) => {
-  const slides = slider.querySelector(".slides");
-  const images = slides.querySelectorAll("img");
+  const slides = slider.querySelectorAll("img");
   const prevBtn = slider.querySelector(".prev");
   const nextBtn = slider.querySelector(".next");
   const counter = slider.querySelector(".counter");
 
   let index = 0;
-  const total = images.length;
+  const total = slides.length;
 
   function updateSlide() {
-    slides.style.transform = `translateX(-${index * 100}%)`;
+    slides.forEach((img, i) => {
+      img.style.display = i === index ? "block" : "none";
+    });
     counter.textContent = `${index + 1} / ${total}`;
   }
 
@@ -376,6 +372,8 @@ document.querySelectorAll(".slider").forEach((slider) => {
 </script>
 </body>
 </html>
+
+
 
 
 
