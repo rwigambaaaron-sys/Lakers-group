@@ -89,12 +89,24 @@
     }
 
     .slide {
-      display: none;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+    
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
 
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
     .slider button {
       position: absolute;
       top: 50%;
@@ -236,8 +248,10 @@
       <div class="item-group">
         <div class="label">Warehouse🏬 - Rwamagana</div>
         <div class="slider">
+          <div class="slides">
           <img class="slide" src="gfs.png" alt="Warehouse 1" />
           <img class="slide" src="fo.png" alt="Warehouse 2" />
+          </div>
           <button class="prev" aria-label="Previous slide">❮</button>
           <button class="next" aria-label="Next slide">❯</button>
           <div class="counter"></div>
@@ -253,9 +267,11 @@
          <div class="item-group">
         <div class="label">Farmland🌲 - Rwamagana</div>
         <div class="slider">
+          <div class="slides">
           <img class="slide" src="gfs.png" alt="Warehouse 1" />
           <img class="slide" src="fo.png" alt="Warehouse 2" />
-          <button class="prev" aria-label="Previous slide">❯</button>
+            </div>
+          <button class="prev" aria-label="Previous slide">❯❮</button>
           <button class="next" aria-label="Next slide">❯</button>
           <div class="counter"></div>
         </div>
@@ -270,9 +286,11 @@
       <div class="item-group">
         <div class="label">Apartment🏢 - Rwamagana</div>
         <div class="slider">
+          <div class="slides">
           <img class="slide" src="gfs.png" alt="Apartment 1" />
           <img class="slide" src="fo.png" alt="Apartment 2" />
-          <button class="prev" aria-label="Previous slide">❯</button>
+          </div>
+          <button class="prev" aria-label="Previous slide">❮</button>
           <button class="next" aria-label="Next slide">❯</button>
           <div class="counter"></div>
         </div>
@@ -287,8 +305,10 @@
       <div class="item-group">
         <div class="label">Houses🏡 - Rwamagana</div>
         <div class="slider">
+          <div class="slides">
           <img class="slide" src="gfs.png" alt="House 1" />
           <img class="slide" src="fo.png" alt="House 2" />
+          </div>
           <button class="prev" aria-label="Previous slide">❮</button>
           <button class="next" aria-label="Next slide">❯</button>
           <div class="counter"></div>
@@ -355,6 +375,7 @@ document.querySelectorAll(".slider").forEach((slider) => {
 </script>
 </body>
 </html>
+
 
 
 
