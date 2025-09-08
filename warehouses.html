@@ -80,7 +80,7 @@
       border-radius: 5px;
       box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
     }
-    
+
     .item img {
       width: 100%;
       height: 200px;
@@ -132,6 +132,17 @@
 
     .next {
       right: 10px;
+    }
+
+    .counter {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
     }
 
     .site-footer {
@@ -224,7 +235,6 @@
    <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html">Houses🏡</a></li>
     <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html">Farm🌲</a></li>
      <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html">Apartments🏢</a></li>
-       <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html">Warehouses</a></li>
       </ul>
     </nav>
   </header>
@@ -233,11 +243,13 @@
 <div class="item-group">
         <div class="label">Warehouse🏬 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="Warehouse 1" loading="lazy"/>
-          <img class="slide" src="fo.png" alt="Warehouse 2" loading="lazy"/>
-          <button class="prev" onclick="plusSlides(-1, 0)">❮</button>
-          <button class="next" onclick="plusSlides(1, 0)">❯</button>
-        </div>
+          <img class="slide" src="gfs.webp" alt="Warehouse 1" loading="lazy"/>
+          <img class="slide" src="fo.webp" alt="Warehouse 2" loading="lazy"/>
+          <img class="slide" src="po.webp" alt="Warehouse 3" loading="lazy"/>
+          <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+             <div class="counter"></div>
+             </div>
         <div class="details">
           <p><strong>13 acres and 25 units</strong></p>
           <p><strong>3000000 RWF - KG 235, Rwamagana</strong></p>
@@ -247,10 +259,12 @@
          <div class="item-group">
         <div class="label">Warehouse🏬 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="Warehouse 1" loading="lazy"/>
-          <img class="slide" src="fo.png" alt="Warehouse 2" loading="lazy"/>
-          <button class="prev" onclick="plusSlides(-1, 0)">❮</button>
-          <button class="next" onclick="plusSlides(1, 0)">❯</button>
+          <img class="slide" src="gfs.webp" alt="Warehouse 1" loading="lazy"/>
+          <img class="slide" src="fo.webp" alt="Warehouse 2" loading="lazy"/>
+          <img class="slide" src="po.webp" alt="Warehouse 3" loading="lazy"/>
+          <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+             <div class="counter"></div>
         </div>
         <div class="details">
           <p><strong>13 acres and 25 units</strong></p>
@@ -261,10 +275,12 @@
       <div class="item-group">
         <div class="label">Warehouse🏬 - Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="Warehouse 1" loading="lazy"/>
-          <img class="slide" src="fo.png" alt="Warehouse 2" loading="lazy"/>
-          <button class="prev" onclick="plusSlides(-1, 1)">❮</button>
-          <button class="next" onclick="plusSlides(1, 1)">❯</button>
+          <img class="slide" src="gfs.webp" alt="Warehouse 1" loading="lazy"/>
+          <img class="slide" src="fo.webp" alt="Warehouse 2" loading="lazy"/>
+          <img class="slide" src="po.webp" alt="Warehouse 3" loading="lazy"/>
+         <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+             <div class="counter"></div>
         </div>
         <div class="details">
           <p><strong>13 acres and 25 units</strong></p>
@@ -275,10 +291,12 @@
       <div class="item-group">
         <div class="label">Warehouse🏬- Rwamagana</div>
         <div class="slider">
-          <img class="slide" src="gfs.png" alt="Warehouse 1" loading="lazy"/>
-          <img class="slide" src="fo.png" alt="Warehouse 2" loading="lazy"/>
-          <button class="prev" onclick="plusSlides(-1, 2)">❮</button>
-          <button class="next" onclick="plusSlides(1, 2)">❯</button>
+          <img class="slide" src="gfs.webp" alt="Warehouse 1" loading="lazy"/>
+          <img class="slide" src="fo.webp" alt="Warehouse 2" loading="lazy"/>
+          <img class="slide" src="po.webp" alt="Warehouse 3" loading="lazy"/>
+          <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+             <div class="counter"></div>
         </div>
         <div class="details">
           <p><strong>13 acres and 25 units</strong></p>
@@ -309,35 +327,35 @@
       </div>
     </div>
   </footer>
-  <script>
-  document.querySelectorAll('.slider').forEach((slider, index) => {
-    let slides = slider.querySelectorAll('.slide');
-    let currentIndex = 0;
+<script>
+document.querySelectorAll(".slider").forEach((slider) => {
+  const slides = slider.querySelectorAll("img");
+  const prevBtn = slider.querySelector(".prev");
+  const nextBtn = slider.querySelector(".next");
+  const counter = slider.querySelector(".counter");
 
-    function showSlide(n) {
-      currentIndex = (n + slides.length) % slides.length;
-      slides.forEach((slide, i) => {
-        slide.style.display = i === currentIndex ? 'block' : 'none';
-      });
-    }
+  let index = 0;
+  const total = slides.length;
 
-    showSlide(0);
-
-    slider.querySelector('.prev').addEventListener('click', () => {
-      showSlide(currentIndex - 1);
+  function updateSlide() {
+    slides.forEach((img, i) => {
+      img.style.display = i === index ? "block" : "none";
     });
+    counter.textContent = `${index + 1} / ${total}`;
+  }
 
-    slider.querySelector('.next').addEventListener('click', () => {
-      showSlide(currentIndex + 1);
-    });
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + total) % total;
+    updateSlide();
   });
-  </script>
+
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % total;
+    updateSlide();
+  });
+
+  updateSlide();
+});
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
