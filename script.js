@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const slider = document.querySelector('.property-slider');
   if (!slider) return;
 
-  const slides = slider.querySelector('.property-slides');
+  const slides = slider.querySelector('.property-slides-wrapper');
   const images = slides.querySelectorAll('img');
   const prev = slider.querySelector('.prev');
   const next = slider.querySelector('.next');
