@@ -1,11 +1,11 @@
 body {
-  background-image: url(4.png);
+  background-image: url(4.webp);
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   margin: 0;
   padding: 0;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('4.png') center/cover no-repeat;       
+              url('4.webp') center/cover no-repeat;       
 }
 
 html {
@@ -299,3 +299,4 @@ html {
   .site-header { flex-direction: column; align-items: flex-start; }
   .site-nav ul { flex-direction: column; gap: 10px; }
 }
+
