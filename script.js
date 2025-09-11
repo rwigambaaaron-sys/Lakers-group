@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
   prev.addEventListener('click', () => showSlide(index - 1));
   next.addEventListener('click', () => showSlide(index + 1));
 
-  setInterval(() => showSlide(index + 1), 7000);
 });
 
 
@@ -63,3 +62,4 @@ document.querySelectorAll(".slider").forEach((slider) => {
 
   updateSlide();
 });
+
