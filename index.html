@@ -1,388 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lakers Group Real Estate - Find Your Dream Property in Rwanda</title>
-  <meta name="description" content="Lakers Group Ltd offers houses, farmland, and commercial real estate in Rwanda. Explore our listings and find your dream property.">
-  <style>
-    body {
-      background-color: rgb(194, 193, 174);
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 20px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .site-header {
-      padding: 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .site-header h1 {
-      color: rgb(254, 216, 0);
-      font-size: 60px;
-      margin: 0;
-      font-family: Poppins, 'Times New Roman', serif;
-    }
-
-    .site-nav ul {
-      list-style: none;
-      display: flex;
-      gap: 40px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .site-nav a {
-      text-decoration: none;
-      color: white;
-      font-size: 22px;
-    }
-
-    html {
-  scroll-behavior: smooth;
-}
-    
-.hero {
-  text-align: center;
-  padding: 30px 15px;
-  background: #ddd;
-  border-radius: 10px;
-  margin: 20px;
-  font-size: 20px;
-}
-    
-    .main-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .item-group {
-      flex: 0 0 0 300px;
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      padding: 15px;
-      border-radius: 5px;
-      box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .item img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      background: #eee; 
-    }
-
-    .item-group .label {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .details {
-      margin-top: 10px;
-    }
-
-    .slider {
-      position: relative;
-      width: 100%;
-      height: 200px;
-      overflow: hidden;
-      border-radius: 5px;
-    }
-
-    .slide {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-
-    .slider button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.4);
-      color: white;
-      border: none;
-      padding: 8px;
-      cursor: pointer;
-      border-radius: 35%;
-      z-index: 1;
-    }
-
-    .prev {
-      left: 10px;
-    }
-
-    .next {
-      right: 10px;
-    }
-    
-    .counter {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      background: rgba(0,0,0,0.6);
-      color: white;
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: 20px;
-    }
-    
-    .site-footer {
-      padding: 20px;
-    }
-
-    .footer-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-
-    .footer-section {
-      flex: 1;
-      margin: 10px;
-    }
-
-    .footer-section h3 {
-      border-bottom: 2px solid black;
-      padding-bottom: 10px;
-    }
-
-    .social-icons {
-      display: flex;
-      gap: 15px;
-      list-style: none;
-      padding: 0;
-    }
-
-    .social-icons a {
-      color: black;
-      font-size: 18px;
-      text-decoration: none;
-    }
-
-    .legal-info a {
-      color: black;
-      margin-right: 15px;
-      text-decoration: none;
-    }
-
-    .legal-info a:hover {
-      text-decoration: underline;
-    }
-
-    .copyright,
-    .trademark {
-      font-size: 0.9em;
-      opacity: 0.7;
-    }
-
-    @media screen and (max-width: 768px) {
-      .main-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .item-group {
-        width: 90%;
-      }
-
-      .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .site-nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-
-    .site-header, .site-footer {
-      background-color: #6B5F3F; 
-      color: #FFFF;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakers Group Real Estate - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <h1><strong><em>Lakers Group</em></strong></h1>
     <nav class="site-nav">
       <ul>
-        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html">Apartments🏢</a></li>
-        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html">Farm🌲</a></li>
-        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html">Warehouses🏬</a></li>
-        <li><a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html">Houses🏡</a></li>
+        <li><a href="apartment.html">Apartments🏢</a></li>
+        <li><a href="farmland.html">Farm🌲</a></li>
+        <li><a href="warehouses.html">Warehouses🏬</a></li>
+        <li><a href="houses.html">Houses🏡</a></li>
       </ul>
     </nav>
   </header>
 
-  <section>
+  <section class="hero">
+    <h2>Find Your Dream Property in Rwanda</h2>
+    <p>We specialize in residential, commercial, and farmland properties.</p>
+  </section>
+
+  <section class="about">
     <h2><strong>About us:</strong></h2>
     <p>Welcome to Laker Group Ltd., established in 2023, and proudly serving as your dedicated partner in the real estate market. We founded Laker Group with a clear vision: to offer a comprehensive and accessible platform for individuals and businesses seeking diverse property solutions.</p>
-    <p>At Laker Group Ltd., we specialize in connecting discerning clients with an extensive portfolio of properties designed to meet a wide range of needs. Our offerings include:</p>
     <ul>
-      <li><strong>Residential houses</strong>: Perfect for families and individuals seeking a new home. </li>
-      <li><strong>Productive farmland</strong>: Ideal for agricultural ventures or rural living. </li>
-      <li><strong>Undeveloped land plots</strong>: Offering opportunities for custom development or investment. </li>
-      <li><strong>Modern apartments</strong>: Catering to urban living and rental investments. </li>
-      <li><strong>Versatile warehouses</strong>: Suited for commercial, industrial, or storage requirements.</li> 
+      <li><strong>Residential houses:</strong> Perfect for families and individuals seeking a new home.</li>
+      <li><strong>Productive farmland:</strong> Ideal for agricultural ventures or rural living.</li>
+      <li><strong>Undeveloped land plots:</strong> Offering opportunities for custom development or investment.</li>
+      <li><strong>Modern apartments:</strong> Catering to urban living and rental investments.</li>
+      <li><strong>Versatile warehouses:</strong> Suited for commercial, industrial, or storage requirements.</li>
     </ul>
+  </section>
 
-    <section class="hero">
-      <h2>Find Your Dream Property in Rwanda</h2>
-      <p>We specialize in residential, commercial, and farmland properties.</p>
-    </section>
-
-    <section>
-      <div class="main-container">
-
-        <div class="item-group">
-          <div class="label">Warehouse🏬 - Rwamagana</div>
-          <div class="slider">
-            <img class="slide" src="gfs.webp" alt="Warehouse 1" loading="lazy"/>
-            <img class="slide" src="fo.webp" alt="Warehouse 2" loading="lazy"/>
-            <img class="slide" src="po.webp" alt="Warehouse 3" loading="lazy"/>
-            <button class="prev" aria-label="Previous slide">❮</button>
-            <button class="next" aria-label="Next slide">❯</button>
-            <div class="counter"></div>
-          </div>
-          <div class="details">
-            <p>13 acres and 25 units</p>
-            <p>3000000 RWF</p>
-            <p>KG 235, Rwamagana</p>
-            <a href="https://rwigambaaaron-sys.github.io/Lakers-group/warehouses.html" target="_blank"><em>View more</em></a>
-          </div>
+  <section>
+    <div class="main-container">
+      <div class="item-group">
+        <div class="label">Warehouse - Rwamagana</div>
+        <div class="slider">
+          <img class="slide" src="cd.webp" alt="Warehouse 1">
+          <img class="slide" src="bc.webp" alt="Warehouse 2">
+          <img class="slide" src="ab.webp" alt="Warehouse 3">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+          <div class="counter"></div>
         </div>
-
-        <div class="item-group">
-          <div class="label">Farmland🌲 - Rwamagana</div>
-          <div class="slider">
-            <img class="slide" src="gfs.webp" alt="Farmland 1" loading="lazy"/>
-            <img class="slide" src="fo.webp" alt="Farmland 2" loading="lazy"/>
-            <img class="slide" src="po.webp" alt="Farmland 3" loading="lazy"/>
-            <button class="prev" aria-label="Previous slide">❮</button>
-            <button class="next" aria-label="Next slide">❯</button>
-            <div class="counter"></div>
-          </div>
-          <div class="details">
-            <p>30 acres</p>
-            <p>3000000 RWF</p>
-            <p>KG 235, Rwamagana</p>
-            <a href="https://rwigambaaaron-sys.github.io/Lakers-group/farmland.html" target="_blank"><em>View more</em></a>
-          </div>
+        <div class="details">
+          <p>13 acres and 25 units</p>
+          <p>3,000,000 RWF</p>
+          <p>KG 235, Rwamagana</p>
+          <a href="warehouses.html"><em>View all warehouses</em></a>
         </div>
-
-        <div class="item-group">
-          <div class="label">Apartment🏢 - Rwamagana</div>
-          <div class="slider">
-            <img class="slide" src="gfs.webp" alt="Apartment 1" loading="lazy"/>
-            <img class="slide" src="fo.webp" alt="Apartment 2" loading="lazy"/>
-            <img class="slide" src="po.webp" alt="Apartment 3" loading="lazy"/>
-            <button class="prev" aria-label="Previous slide">❮</button>
-            <button class="next" aria-label="Next slide">❯</button>
-            <div class="counter"></div>
-          </div>
-          <div class="details">
-            <p>3 beds and a bathroom</p>
-            <p>3000000 RWF</p>
-            <p>KG 235, Rwamagana</p>
-            <a href="https://rwigambaaaron-sys.github.io/Lakers-group/apartments.html" target="_blank"><em>View more</em></a>
-          </div>
-        </div>
-
-        <div class="item-group">
-          <div class="label">Houses🏡 - Rwamagana</div>
-          <div class="slider">
-            <img class="slide" src="gfs.webp" alt="House 1" loading="lazy"/>
-            <img class="slide" src="fo.webp" alt="House 2" loading="lazy"/>
-            <img class="slide" src="po.webp" alt="House 3" loading="lazy"/>
-            <button class="prev" aria-label="Previous slide">❮</button>
-            <button class="next" aria-label="Next slide">❯</button>
-            <div class="counter"></div>
-          </div>
-          <div class="details">
-            <p>3 beds and a bathroom</p>
-            <p>3000000 RWF</p>
-            <p>KG 235, Rwamagana</p>
-            <a href="https://rwigambaaaron-sys.github.io/Lakers-group/houses.html" target="_blank"><em>View more</em></a>
-          </div>
-        </div>
-
       </div>
-    </section>
+
+      <div class="item-group">
+        <div class="label">Apartments - Rwamagana</div>
+        <div class="slider">
+          <img class="slide" src="sc.webp" alt="Warehouse 1">
+          <img class="slide" src="bc.webp" alt="Warehouse 2">
+          <img class="slide" src="cd.webp" alt="Warehouse 3">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+          <div class="counter"></div>
+        </div>
+        <div class="details">
+          <p>13 acres and 25 units</p>
+          <p>3,000,000 RWF</p>
+          <p>KG 235, Rwamagana</p>
+          <a href="apartment.html"><em>View all apartments</em></a>
+        </div>
+      </div>
+
+      <div class="item-group">
+        <div class="label">Farmland - Rwamagana</div>
+        <div class="slider">
+          <img class="slide" src="bc.webp" alt="Warehouse 1">
+          <img class="slide" src="sc.webp" alt="Warehouse 2">
+          <img class="slide" src="cd.webp" alt="Warehouse 3">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+          <div class="counter"></div>
+        </div>
+        <div class="details">
+          <p>13 acres and 25 units</p>
+          <p>3,000,000 RWF</p>
+          <p>KG 235, Rwamagana</p>
+          <a href="farmland.html"><em>View all farmland</em></a>
+        </div>
+      </div>
+
+      <div class="item-group">
+        <div class="label">Land - Rwamagana</div>
+        <div class="slider">
+          <img class="slide" src="aa.webp" alt="Warehouse 1">
+          <img class="slide" src="sc.webp" alt="Warehouse 2">
+          <img class="slide" src="ab.webp" alt="Warehouse 3">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+          <div class="counter"></div>
+        </div>
+        <div class="details">
+          <p>13 acres and 25 units</p>
+          <p>3,000,000 RWF</p>
+          <p>KG 235, Rwamagana</p>
+          <a href="farmland.html"><em>View all land</em></a>
+        </div>
+      </div>
+
+      <div class="item-group">
+        <div class="label">Houses - Kigali</div>
+        <div class="slider">
+          <img class="slide" src="re.webp" alt="Warehouse 1">
+          <img class="slide" src="sc.webp" alt="Warehouse 2">
+          <img class="slide" src="cd.webp" alt="Warehouse 3">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+          <div class="counter"></div>
+        </div>
+        <div class="details">
+          <p>3 bedrooms and 2 bathrooms</p>
+          <p>3,000,000 RWF</p>
+          <p>KG 7 Ave, Kigali</p>
+          <a href="houses.html"><em>View all houses</em></a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Contact us 📞</h3>
-        <p>Hotline: 0794444334</p>
-        <p>Whatsapp: 0788333324</p>
+    <div class="footer-container footer">
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apartment.html">Apartments</a></li>
+          <li><a href="houses.html">Houses</a></li>
+          <li><a href="farmland.html">Farmland</a></li>
+          <li><a href="warehouses.html">Warehouses</a></li>
+        </ul>
       </div>
-      <div class="footer-section social-links">
-        <h3>Follow Us📲</h3>
-        <ul class="social-icons"></ul>
-        <p>On our <a href="#" target="_blank"><em>Instagram</em></a></p>
-        <p>On our <a href="#" target="_blank"><em>X (Twitter)</em></a></p>
+    
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">X (Twitter)</a></li>
+        </ul>
       </div>
-      <div class="footer-section legal-info">
-        <p>&copy; 2024 Lakers Group. All rights reserved.</p>
-        <p class="trademark">Lakers Group Ltd&trade;</p>
-        <p>Privacy Policy | Terms of Use</p>
+
+       <div class="footer-column">
+        <h3>Contact us</h3>
+        <ul>
+          <li>Hotline; 0788233434</li>
+          <li>Whatsapp; 0794234554</li>
+        </ul>
       </div>
     </div>
   </footer>
 
-<script>
-document.querySelectorAll(".slider").forEach((slider) => {
-  const slides = slider.querySelectorAll("img");
-  const prevBtn = slider.querySelector(".prev");
-  const nextBtn = slider.querySelector(".next");
-  const counter = slider.querySelector(".counter");
-
-  let index = 0;
-  const total = slides.length;
-
-  function updateSlide() {
-    slides.forEach((img, i) => {
-      img.style.display = i === index ? "block" : "none";
-    });
-    counter.textContent = `${index + 1} / ${total}`;
-  }
-
-  prevBtn.addEventListener("click", () => {
-    index = (index - 1 + total) % total;
-    updateSlide();
-  });
-
-  nextBtn.addEventListener("click", () => {
-    index = (index + 1) % total;
-    updateSlide();
-  });
-
-  updateSlide();
-});
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
